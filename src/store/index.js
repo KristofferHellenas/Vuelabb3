@@ -5,11 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    selectedcurrency: 'test',
   },
   mutations: {
+    saveCurrency(state, chosenCurrency) {
+      state.selectedcurrency = chosenCurrency
+    }
   },
-  actions: {
-  },
-  modules: {
-  }
+  actions: {},
+  modules: {}
 })
